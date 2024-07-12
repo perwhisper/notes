@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 260px;
+            background-color: chartreuse;
+            color: white;
+            text-align: center;
+        }
+        .box:hover{
+            background-color: red;
+        }
+        /* 超链接访问前 */
+        .focus:link{
+            color: #253586;
+        }
+        /* 超链接访问后 */
+        .focus:visited{
+            color: rgb(0, 255, 0);
+        }
+        /* 超链接鼠标划过时 */
+        .focus:hover{
+            color: black;
+        }
+        /* 超链接鼠标焦聚时状态 */
+        .focus:active{
+            color: red;
+        }
+        /* 优先级最高 */
+        #p1{
+            color: blue!important;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box">
+        我会变色
+    </div>
+    <!-- 超链接 设置四种状态 -->
+    <div>
+        <span> 下面是一个链接</span>
+        <a class="focus" href="#" target="_parent">百度</a>
+    </div>
+    <div>
+        <p id="p1" style="color: red;"> 这是蓝色</p>
+        <p id="p1" style="color: red;"> 这是蓝色</p>
+    </div>
+</body>
+</html>

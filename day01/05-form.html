@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="#">
+        <!-- 输入姓名可见 -->
+        <div>
+            <label for="name">昵称</label>
+            <input type="text" 
+                   id="name" 
+                   name="name"
+                   placeholder="请输入用户昵称" >
+        </div>
+        <!-- 输入密码 不可见输入隐藏 -->
+        <div>
+            <label for="pass">密码</label>
+            <input type="password"
+                   id="pass"
+                   name="pass"
+                   placeholder="请输入密码">
+        </div>
+         <!-- 下拉选项 单选 -->
+        <dir>
+            <label for="education">学历</label>
+            <select name="education" id="education">
+                <option value="1">本科/option>
+                <option value="2">高中</option>
+                <option value="3">初中</option>
+                <option value="4">小学</option>
+            </select>
+        </dir>
+
+        <!-- 单选用于少数选项 -->
+         <div>
+            <label for="sex">性别</label>
+            <input type="radio" 
+                   value="1"
+                   name="sex" 
+                   id="sex"
+                   checked
+                   > 男♂
+            <input type="radio"
+                   value='2'
+                   name="sex" 
+                   id="sex"> 女♀
+         </div>
+
+         <!-- 设置多选 -->
+        <div>
+            <label for="hobby">爱好</label>
+            <input type="checkbox"/> 编程
+            <input type="checkbox"/> 篮球
+            <input type="checkbox"/> 阅读
+            <input type="checkbox"/> 冲浪
+        </div>
+
+        <!-- 文本输入 -->
+         <div>
+            <label for="introduction">简介</label>
+            <textarea name="introduction"
+                      id="introduction"
+                      cols="30"
+                      rows="10">
+                    </textarea>
+         </div>
+        <div>
+            <input type="submit" value="注册">
+            <input type="reset"  value="重置">
+        </div>
+    </form>
+</body>
+</html>
